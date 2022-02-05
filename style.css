@@ -128,13 +128,48 @@ img {
 }
 
 .s-right__inner {
-    margin-right: 20px;
+    margin-right: 40px;
     margin-top: 70px;
     margin-left: 40px;
 }
-
+/* 名前*/
 .s-right__icon {
     width: 150px;
     height: 150px;
     border-radius: 100px;
+    margin-left: 70px;
+}
+
+.name {
+    font-weight: bold;
+    margin: 20px 110px;
+}
+
+/* Ranking */
+.s-right__text {
+    margin-top: 10px;
+}
+
+.s-right__img {
+    margin-top: 30px;
+}
+
+/* Archive */
+.s-right__items {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.s-right__item {
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+/*----------------------------------------------------------*/
+/* footer */
+/*----------------------------------------------------------*/
+.footer {
+    width: 100%;
+    clear: both;
 }
