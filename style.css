@@ -56,6 +56,28 @@ img {
     transition: 0.3s;
 }
 
+@media screen and (max-width: 767px) {
+    .header{
+        width: 100%;
+        position: fixed;
+    }
+    
+    .header__logo{
+        width: 200px;
+        height: 100px;
+    }
+
+    .header-list {
+       width: 100%;
+       margin: auto;
+       padding: 17px;
+    }
+
+    .header-list__item {
+        margin-left: 10px;
+    }
+}
+
 /*----------------------------------------------------------*/
 /* main */
 /*----------------------------------------------------------*/
@@ -99,6 +121,26 @@ img {
     opacity: 0.6;
     transition: 0.3s;
 }
+
+@media screen and (max-width: 767px) {
+    .main {
+        width: 100%;
+    }
+
+    .main-cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .main-card {
+        margin: 30px;
+    }
+
+    .main__img {
+        width: 100%;
+    }
+}
 /*----------------------------------------------------------*/
 /* 左側 */
 /*----------------------------------------------------------*/
@@ -128,6 +170,26 @@ img {
     margin: 20px 40px 30px;
 }
 
+@media screen and (max-width: 767px) {
+    .s-left {
+        clear: both;
+        width: 100%;
+    }
+
+    .s-left__inner {
+        margin: 60px 20px;
+
+    }
+
+    .s-left__text {
+        line-height: 30px;
+    }
+
+    .s-left__img {
+        width: 100%;
+        height: 200px;
+    }
+}
 /*----------------------------------------------------------*/
 /* 右側 */
 /*----------------------------------------------------------*/
@@ -146,12 +208,20 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    margin-left: 70px;
 }
 
 .name {
     font-weight: bold;
-    margin: 20px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.s-right__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Ranking */
@@ -179,6 +249,16 @@ img {
     padding: 20px;
 }
 
+@media screen and (max-width: 767px) {
+    .s-right {
+        clear: both;
+        width: 100%;
+    }
+
+    .s-right__text {
+        line-height: 30px;
+    }
+}
 /*----------------------------------------------------------*/
 /* footer */
 /*----------------------------------------------------------*/
@@ -256,4 +336,31 @@ img {
     justify-content: center;
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px){
+    .footer-cards {
+        display: flex;
+        flex-direction: column;
+    }
+/* about */
+    .footer-card {
+        width: 100%;
+        margin: 40px 20px;
+    }
+
+    .footer__text {
+        width: 80%;
+    }
+/* menu */
+    .footer-list {
+        width: 80%;
+    }
+/* twitter */
+    .twitter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 }
